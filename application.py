@@ -322,3 +322,6 @@ def read():
         article['content'] = content
 
     return render_template("read.html", display=display, articles=articles)
+
+if __name__ == "__main__":
+    app.run(debug=False,host='0.0.0.0')
